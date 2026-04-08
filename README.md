@@ -3,19 +3,64 @@ builds a data wharehouse usinf sql server ,including ETL process,data modeling a
 
 # Data Warehouse and Analytics Project
 
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. it highlights industry best practices in data engineering and analytics.# 📊 CRM & ERP Data Warehouse Project
 
-# Data Architecture
+## 📌 Project Overview
+This project presents an **end-to-end Data Warehouse solution** that integrates CRM and ERP data using the **Medallion Architecture (Bronze → Silver → Gold)**.  
+It focuses on building a **clean, reliable, and analytics-ready data foundation** for downstream reporting and business intelligence.
 
-The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers:
-![data_architecture](documents/assets/Architecture.png)
-
-
-1. Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
+The solution demonstrates how raw operational data can be incrementally refined into structured, trusted datasets through layered transformations and modeling.
 
 
+The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold laye
+
+##  High‑Level Architecture
+This diagram provides a high-level view of the overall system design and how data moves from source systems to analytical consumption layers.
+
+At this level, the focus is on showing the separation of concerns between raw ingestion, data transformation, and business consumption, as well as how the data warehouse serves multiple downstream use cases such as BI and analytics.
+documents/assets/Architecture.png
+
+
+##  Data Flow Across Layers
+This diagram illustrates how CRM and ERP tables progress through the Bronze, Silver, and Gold layers within the data warehouse.
+
+It highlights how data evolves across layers—from raw source-aligned tables to cleaned and standardized datasets, and finally into analytics-optimized structures designed for reporting and analysis.
+
+assets/data_flow.png
+
+
+## Data Integration Overview
+This diagram highlights how CRM transactional and master data is enriched and aligned with ERP reference and customer data to create unified datasets.
+
+It emphasizes the integration logic between systems, ensuring consistency across customers, products, and categories while maintaining a single analytical view across enterprise data sources.
+
+assets/data_integration.png
+
+---
+
+## ⭐ Sales Data Mart (Gold Layer)
+This diagram represents the final **Sales Data Mart**, modeled using a star schema and optimized for analytical queries and reporting.
+
+The model is designed to support efficient querying, dimensional analysis, and aggregation by separating descriptive attributes into dimensions and measurable business metrics into a central fact table.
+
+assets/data_model.png
+
+---
+
+## 🛠️ Technologies Used
+- SQL Server
+- Advanced SQL
+- Medallion Architecture
+- Dimensional Modeling (Star Schema)
+- CRM & ERP data integration
+- Power BI
+
+---
+
+## 👤 Author
+**ملك وسام ممدوح محمد القباني**  
+Student – Data Engineering & Analytics  
+Alexandria, Egypt
 # Project Overview
 
 This project involves:
@@ -27,21 +72,5 @@ This project involves:
 
 
 
-
----
-
-# Project Requirements
-
-### Building the Data Warehouse (Data Engineering)
-
-#### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
-
-#### Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
 
