@@ -27,7 +27,7 @@ This diagram illustrates how CRM and ERP tables progress through the Bronze, Sil
 
 It highlights how data evolves across layers—from raw source-aligned tables to cleaned and standardized datasets, and finally into analytics-optimized structures designed for reporting and analysis.
 
-![High-Level Architecture](assets/data_flow.png)
+![Data_flow](documents/assets/data_flow.png)
 
 
 ## Data Integration Overview
@@ -35,7 +35,7 @@ This diagram highlights how CRM transactional and master data is enriched and al
 
 It emphasizes the integration logic between systems, ensuring consistency across customers, products, and categories while maintaining a single analytical view across enterprise data sources.
 
-![High-Level Architecture](assets/data_integration.png)
+![Data_integration](documents/assets/data_integration.png)
 
 
 ## ⭐ Sales Data Mart (Gold Layer)
@@ -43,7 +43,7 @@ This diagram represents the final **Sales Data Mart**, modeled using a star sche
 
 The model is designed to support efficient querying, dimensional analysis, and aggregation by separating descriptive attributes into dimensions and measurable business metrics into a central fact table.
 
-![High-Level Architecture](assets/data_model.png)
+![Data_Model](documents/assets/data_model.png)
 
 
 
