@@ -1,5 +1,5 @@
 # sql-data_warehouse-project
-builds a data wharehouse usinf sql server ,including ETL process,data modeling and analystics
+builds a data warehouse using sql server ,including ETL process,data modeling and analystics
 
 # Data Warehouse and Analytics Project
 
